@@ -1,25 +1,24 @@
-# personal-developer-portfolio-site
+# Developer Portfolio Site
 
-Personal web development portfolio and interactive project showcase.
+A personal developer portfolio built with React and Vite.
 
-## Repository status
+## What it does
+This application displays a developer's real project data and skills. It features a contact form and is designed with a mobile-first approach.
 
-This repository is part of Ziad Taha's public portfolio. It may represent a product study, an academic deliverable, or a practical engineering exercise. The current source, commit history, and dependency manifests are the source of truth for implementation status.
+## Tech
+- React
+- Vite
+- TypeScript
 
-| Detail | Value |
-|---|---|
-| Primary language | Not specified |
-| Repository | https://github.com/ZiadtahaM/personal-developer-portfolio-site |
-| Documentation status | Initial project map added during portfolio quality pass |
+## Architecture
+```mermaid
+flowchart TD
+    A[User Browser] -->|Loads| B[Vite + React SPA]
+    B -->|Renders| C[Portfolio UI]
+```
 
-## Local development
-
-Inspect the root directory for the project manifest and follow its declared scripts before attempting a build or deployment. Where no manifest is included, preview the source with the smallest appropriate local tool and avoid inferring an unsupported server, database, authentication, payment, or AI integration.
-
-## Engineering and security notes
-
-Never commit credentials, user data, runtime configuration, or production tokens. Treat external input as untrusted, validate it at the applicable boundary, and add automated build/test checks before using the repository as a deployment source. For feature work, document the user journey, loading/error/empty states, and a rollback path.
-
-## Portfolio context
-
-This project sits within a wider portfolio of React/TypeScript interfaces, Node.js/NestJS services, Arabic/English product experiments, and 3D web work. See the [profile repository](https://github.com/ZiadtahaM) for a curated entry point.
+## Getting started
+```bash
+npm install
+npm run dev
+```
